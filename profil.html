@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mon profil</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body>
+
+    <!-- Chargement de la page -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+    <!-- Navigation -->
+    <nav role="navigation">
+        <h5 class="center">Mon profil</h5>
+        <ul id="slide-out" class="sidenav sidenav-fixed center">
+            <li>
+                <img src="img/utilisateur.jpg" id="imgClient" class="circle">
+            </li>
+            <li>
+                <a href="accueil.html">
+                    <i class="material-icons white-text">home</i>Accueil</a>
+            </li>
+            <li>
+                <a href="cabinet.html">
+                    <i class="material-icons white-text">location_on</i>Cabinet</a>
+            </li>
+            <li>
+                <a href="profil.html" class="active">
+                    <i class="material-icons white-text">person</i>Mon profil</a>
+            </li>
+            <li>
+                <a href="dossierMedical.html">
+                    <i class="material-icons white-text">folder</i>Dossier médical</a>
+            </li>
+            <li>
+                <a href="parametres.html">
+                    <i class="material-icons white-text">settings</i>Paramètres</a>
+            </li>
+        </ul>
+        <a href="#" data-target="slide-out" class="sidenav-trigger">
+            <i class="material-icons">menu</i>
+        </a>
+    </nav>
+    <!-- Page -->
+    <main>
+        <!-- Header -->
+        <header>
+            <img class="responsive-img" src="img/vaguetop.svg">
+            <div class="container center-align textHeader">
+                <img class="ImgProfil circle z-depth-3" src="img/utilisateur.jpg" id="photoProfil">
+                <h4 class="TextNomUtilisateur center orange-text">Laura Santana</h4>
+                <!--<div class="row center">
+                    <h5 class="header col s12 light">Consulter et modifier vos informations :</h5>
+                </div>-->
+            </div>
+        </header>
+        <!-- Sections -->
+        <section class="container">
+            <!-- Formulaire -->
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col l6 s12">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input id="prenom" id="icon_prefix" value=" " type="text" class="validate prenom">
+                        <label for="icon_prefix" id="Prénom">Prénom</label>
+                    </div>
+                    <div class="input-field col l6 s12">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input id="nom" id="icon_prefix" value=" " type="text" class="validate nom">
+                        <label for="icon_prefix">Nom</label>
+                    </div>
+                    <div class="input-field col l6 s12">
+                        <i class="material-icons prefix">date_range</i>
+                        <input id="dateNaissance" id="icon_telephone date" value=" " type="text" class="validate date">
+                        <label for="icon_date">dateNaissance</label>
+                    </div>
+                    <div class="input-field col l6 s12">
+                        <i class="material-icons prefix">phone</i>
+                        <input id="telephone1" value=" " type="text" class="validate tel">
+                        <label for="icon_telephone">Téléphone</label>
+                    </div>
+                    <div class="input-field col l6 s12">
+                        <i class="material-icons prefix">phone</i>
+                        <input id="telephone2" id="icon_telephone tel" value=" " type="text" class="validate tel">
+                        <label for="icon_telephone">Téléphone</label>
+                    </div>
+                    <div class="input-field col l6 s12">
+                        <i class="material-icons prefix">mail</i>
+                        <input id="email" id="icon_email" value=" " type="text" class="validate mail">
+                        <label for="icon_email">Email</label>
+                    </div>
+
+            </form>
+        </section>
+
+        <br>
+        <!-- Carousel
+        <section class="row center">
+            <h5 class="light col s10 offset-s1">Vos photos enregistrées :</h5>
+            <div class="CarouselProfil carousel carousel-slider indicators col s10 m4 offset-s1 offset-m4">
+                <a class="carousel-item" href="#one!"><img class="" src="img/dent1.jpg"></a>
+                <a class="carousel-item" href="#two!"><img class="" src="img/dent2.jpg"></a>
+                <a class="carousel-item" href="#three!"><img class="" src="img/dent3.jpg"></a>
+            </div>
+        </section>
+        -->
+        <section class="GridImage">
+            <section class="container center-align">
+
+                    <div class="row">
+                            <div class="col s6 m6 l6">
+                                    <h5 class="title_col_img"><span>Avant</span> les soins</h5>
+                            </div>
+                            <div class="col s6 m6 l6">
+                                <h5 class="title_col_img"><span>Après</span> les soins</h5>
+                            </div>
+                        </div>
+
+
+                <div class="row">
+                    <div class="col s6 m6 l6">
+                        <img src="img/dent1.jpg" alt="" class="z-depth-2 responsive-img materialboxed" id="photoFaceAv">
+                        <p class="info_img_dent">
+                        <span class="age_soin">9 ans</span> - 
+                        <span class="date_img_soin">12-04-2015</span>
+                        </p>
+                    </div>
+                    <div class="col s6 m6 l6">
+                        <img src="img/dent2.jpg" alt="" class="z-depth-2 responsive-img materialboxed" id="photoFaceAp">
+                        <p class="info_img_dent">
+                        <span class="age_soin">11 ans</span> - 
+                        <span class="date_img_soin">21-08-2017</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s6 m6 l6">
+                        <img src="img/dent3.jpg" alt="" class="z-depth-2 responsive-img materialboxed" id="photoIntraAv">
+                        <p class="info_img_dent">
+                            <span class="age_soin">15 ans</span> - 
+                            <span class="date_img_soin">11-02-2010</span>
+                        </p>
+                    </div>
+                    <div class="col s6 m6 l6">
+                        <img src="img/dent4.png" alt="" class="z-depth-2 responsive-img materialboxed" id="photoIntraAp">
+                        <p class="info_img_dent">
+                            <span class="age_soin">18 ans</span> - 
+                            <span class="date_img_soin">26-07-2013</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+    </main>
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+    <script type="module" src="js/initProfile.js"></script>
+
+
+</body>
+
+</html>

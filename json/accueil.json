@@ -1,0 +1,32 @@
+{
+    "logoCab": "./images/logo.jpg",
+    "nomCab": "Docteurs Bague, Bridge, Etché et Fraise",
+    "imgHeader": "./images/cabinet.jpg",
+    "imgProfil": "./img/utilisateur.jpg",
+    "notice":[
+    {
+        "nomPatient": "Deborah",
+        "notification": "Rendez-vous avec le Docteur Roulette le 15 Mai à 9h.",
+        "imagePatient": "./images/patient1.jpg",
+        "typeNotif": "0"
+    },
+    {
+        "nomPatient": "Joséphine",
+        "notification": "Report du RDV au 5 Juin à 11H avec le docteur Berry.",
+        "imagePatient": "./images/patient2.png",
+        "typeNotif": "1"
+    },
+    {
+        "nomPatient": "Laurence",
+        "notification": "Annulation RDV du 12 Juillet à 15H avec le docteur Ronald.",
+        "imagePatient": "./images/patient3.png",
+        "typeNotif": "0"
+    },
+    {
+        "nomPatient": "Sidonie",
+        "notification": "RDV du 2 Septembre à 12H avec le docteuresse Wilfried.",
+        "imagePatient": "./images/patient4.png",
+        "typeNotif": "0"
+    }
+    ]
+}

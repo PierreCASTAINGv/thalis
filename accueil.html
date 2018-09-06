@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Accueil</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+<style>
+.blink {
+    background-color: white !important;
+    animation: blink 1.5s infinite ease-in-out;
+}
+@keyframes blink {
+
+    0% {
+        background-color: #f4fffe;  
+    }
+    25% {
+        background-color: #bff5f2;  
+    }
+    75% {
+        background-color: #bff5f2;  
+    }
+    100% {
+        background-color: #f4fffe;  
+    }
+}
+
+</style>
+</head>
+
+<body>
+    <!-- Chargement de la page -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+    <!-- Navigation -->
+    <nav role="navigation"><h5 class="center">Notifications</h5>
+        <ul id="slide-out" class="sidenav sidenav-fixed center">
+            <li><img src="img/utilisateur.jpg" id="imgUser" class="circle"></li>
+            <li><a href="accueil.html" class="active"><i class="material-icons white-text">home</i>Accueil</a></li>
+            <li><a href="cabinet.html"><i class="material-icons white-text">location_on</i>Cabinet</a></li>
+            <li><a href="profil.html"><i class="material-icons white-text">person</i>Mon profil</a></li>
+            <li><a href="dossierMedical.html"><i class="material-icons white-text">folder</i>Dossier médical</a></li>
+            <li><a href="parametres.html"><i class="material-icons white-text">settings</i>Paramètres</a></li>
+        </ul>
+        <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </nav>
+    <!-- Page -->
+    <main>
+        <!-- Header -->
+        <header>
+            <img class="Opacitevague responsive-img" src="img/vaguetop.svg">
+        </header>
+        <!-- Sections -->
+        <section class="container Container_logo">
+
+            <!-- Notification status urgent -->
+
+    
+            <!--derriere regle mon logo-->
+            
+            <h2 class="center grey-text Titre plusgro"><img id="logo_d" class="dent responsive-img" src="img/dent_orange.png"></h2>
+            <h2 id="nameCabinet" class="center grey-text Titre plusgro Titremarge">Fraise</h2>
+            <!-- <h2 class="center grey-text Titre">des Docteur Bague, Bridge, Etche et Fraise</h2> cardpanel ou carpanel horizontal -->
+            <!--<div class="row center"></div>-->
+            <!-- <h6 class="header center light">VOTRE ORTHOPTISTE MALIN!!</h6> -->
+            <div class="divider"></div>
+        </section>
+
+
+        <section class="container">
+        <img id="imagHeader" class="responsive-img Photoaccueil z-depth-2" src="img/cabinetcoupe.png">
+        </section>
+   
+        <section class="container">
+            <div class="section">
+                    <div class="divider"></div>
+                <!--Les Notifications Une-->
+                <!--<div class="col s12 m8 offset-m2 l6 offset-l3">
+                    <h6 class="center margetitre5 plusgro">Notifications</h6>
+                    <div class="divider"></div>
+                    <br>
+                    
+                </div>-->
+                <!--Les Notifications Deux-->
+                <div id="notifs"></div>
+                
+                <!--Les Notifications trois-->
+                <div class="col s12 m8 offset-m2 l6 offset-l3">
+                    <i class="material-icons ">add</i>
+                    <div class="card-panel grey lighten-5 z-depth-0 ">
+                        <!--cyan lighten-2 pour changer la couleur-->
+                        <div class="row valign-wrapper">
+                            <div class="col s2">
+                                <i class="small material-icons ">add_alert</i>
+                                <!-- notice the "circle" class -->
+                            </div>
+                            <div class="col s10">
+                                <span class="black-text plusgro">
+                                    Publicité
+                                </span>
+        <div class="divider"></div>
+                            </div>
+                            <div class="divider "></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+        </section>
+    </main>
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <!-- <script src="./js/accueil_webstorage.js"></script> -->
+    <script src="js/init.js"></script>
+    <script type="module" src="js/inits.js"></script>
+    
+</body>
+
+</html>

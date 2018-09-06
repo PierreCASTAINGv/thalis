@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mon profil</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/loginPatient.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body class="font">
+    
+    <!-- Chargement de la page -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+    <!-- Header -->
+    <header>
+        <img class="vaguetop" src="img/vaguetop.svg">
+    </header>
+    <!-- Sections -->
+    <section class="container center">
+        <h3 class="teal-text text">Bienvenue</h3>
+        <br>
+        <br>
+        <form>
+            <div class="input-field">
+                <i class="material-icons prefix">person</i>
+                <textarea placeholder="Code patient" class="materialize-textarea"></textarea>
+            </div>
+            <div class="input-field">
+                <i class="material-icons prefix">lock_outline</i>
+                <textarea placeholder="Mot de passe" class="materialize-textarea"></textarea>
+            </div>
+            <br>
+            <a class="btn-large waves-effect waves-light" type="submit" name="action" href="accueil.html">Valider</a>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <img class="vaguebottom hide-on-med-and-up" src="img/vaguebottom.svg">
+    </footer>
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+
+</body>
+
+</html>

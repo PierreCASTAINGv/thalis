@@ -1,0 +1,25 @@
+{
+    "description": "Cabinet orthodontique des Docteurs Bague, Bridge, Etche et Gourmette",
+    "image": "img/cabinetcoupe.png",
+    "adresse": "31 rue de la digue",
+    "tel": "06 69 66 66 66",
+    "mail": "docteurfraise@wanadoo.fr",
+    "horaires": "----- HORAIRES -----<br><br>Lundi    : fermé <br>Mardi    : 9h-12h / 14h-18h<br>Mercredi : 8h-12h / 14h-18h<br>Jeudi    : 8h-12h / 14h-18h<br>Vendredi : 8h-12h<br>",  
+    "praticiens":[
+        {
+            "praticienNom": "Dr Bridge",
+            "praticienDesc": "Une ortho au dessus du lot ! blabla j'ai fais des études blabla...",
+            "praticienPhoto": "img/ortho1.jpg"
+        },
+        {
+            "praticienNom": "Dr Bague",
+            "praticienDesc": "Un ortho top niveau ! blabla j'ai fais des études blabla...",
+            "praticienPhoto": "img/ortho2.jpg"
+        },
+        {
+            "praticienNom": "Dr Gourmette",
+            "praticienDesc": "Un ortho top niveau ! blabla j'ai fais des études blabla...",
+            "praticienPhoto": "img/ortho3.jpg"
+        }
+    ]
+}

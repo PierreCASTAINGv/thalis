@@ -1,0 +1,13 @@
+{
+    "prenom": "Pierre",
+    "nom": "santana",
+    "dateNaissance": "1989-01-01",
+    "telephone1": "0659989808",
+    "telephone2": "0767889808",
+    "email": "localhost@localhost.com",
+    "photoProfil": "img/utilisateur.jpg",
+    "photoFaceAv": "img/dent1.jpg",
+    "photoFaceAp": "img/dent2.jpg",
+    "photoIntraAv": "img/dent3.jpg",
+    "photoIntraAp": "img/dent4.png"
+}

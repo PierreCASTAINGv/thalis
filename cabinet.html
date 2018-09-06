@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Navigation</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <script src="js/InitCabinet.js" type="module"></script>
+</head>
+
+<body class="MainCabinet">
+    
+    <!-- Chargement de la page 
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+    -->
+    <!-- Navigation -->
+    <nav role="navigation"><h5 class="center">Notre cabinet</h5>
+        <ul id="slide-out" class="sidenav sidenav-fixed center">
+            <li><img src="img/utilisateur.jpg" class="circle"></li>
+            <li><a href="accueil.html"><i class="material-icons white-text">home</i>Accueil</a></li>
+            <li><a href="cabinet.html" class="active"><i class="material-icons white-text">location_on</i>Cabinet</a></li>
+            <li><a href="profil.html"><i class="material-icons white-text">person</i>Mon profil</a></li>
+            <li><a href="dossierMedical.html"><i class="material-icons white-text">folder</i>Dossier médical</a></li>
+            <li><a href="parametres.html"><i class="material-icons white-text">settings</i>Paramètres</a></li>
+        </ul>
+        <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </nav>
+    <!-- Page -->
+    <main>
+        <!-- Header -->
+        <header>
+            <!-- Insertion image cabinet -->
+            <img class="responsive-img" id="cabinetImage">
+        </header>
+        <!-- Sections -->
+        <section>
+            <!-- Insertion carousel avec card -->
+            <div class="carousel Cont">
+                <!-- Contenu généré en javascript -->
+            </div>
+        </section>
+
+        <!-- Ajout de nom cabinet -->
+        <div class="container center">
+            <h6 class="grey-text text-darken-1" id="cabinetDescription"></h6>
+            <br>
+        </div>
+
+        <!-- Ajout coordonnées -->
+        <section class="container z-depth-2">
+            <ul class="collection">
+                <li class="collection-item valign-wrapper">
+                    <a class="btn-floating pulse green" href="#!"><i class="material-icons">location_on</i></a>
+                    <p class="toto" id="cabinetAdresse">
+                    </p>
+                </li>
+                <li class="collection-item  valign-wrapper">
+                    <a class="btn-floating pulse teal lighten-2" href="#!"><i class="material-icons">phone</i></a>
+                    <p class="toto" id="cabinetTel"><br>
+                    </p>
+                    <!-- <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a> -->
+                </li>
+                <li class="collection-item  valign-wrapper">
+                    <a class="btn-floating pulse deep-orange lighten-1" href="#!"><i class="material-icons">alternate_email</i></a>
+                    <p class="toto" id="cabinetMail"><br>
+                    </p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Ajout collapsible horaire -->
+        <section class="container z-depth-2">
+            <ul class="collapsible collection coordonnee">
+                <li class="collection-item avatar Fond">
+                    <div class="collapsible-header Bordure"><i class="material-icons circle red">access_time</i>Horaires
+                    </div>
+                    <div class="collapsible-body  grey-text text-darken-2" id="cabinetHoraires">
+                    </div>
+                </li>
+            </ul>
+        </section>  
+
+        <!-- Ajout carte  -->
+        <br>
+        <footer class="carte">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3451.8720054365053!2d-0.37054304447418573!3d43.32123418375392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5648afb93c9f3d%3A0xbd2043ae2d7897be!2sTechnopole+H%C3%A9lioparc!5e0!3m2!1sfr!2sfr!4v1527666482899" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </footer>
+    </main>
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+    
+
+</body>
+
+</html>
